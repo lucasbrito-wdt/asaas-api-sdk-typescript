@@ -2,23 +2,23 @@
 
 SDK TypeScript oficial para integração com a API Asaas v3.0.0.
 
-[![npm version](https://img.shields.io/npm/v/@asaas/api-sdk-typescript.svg)](https://www.npmjs.com/package/@asaas/api-sdk-typescript)
+[![npm version](https://img.shields.io/npm/v/@luquinhasbrito/asaas-api-sdk-typescript.svg)](https://www.npmjs.com/package/@luquinhasbrito/asaas-api-sdk-typescript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📦 Instalação
 
 ```bash
-npm install @asaas/api-sdk-typescript
+npm install @luquinhasbrito/asaas-api-sdk-typescript
 # ou
-pnpm add @asaas/api-sdk-typescript
+pnpm add @luquinhasbrito/asaas-api-sdk-typescript
 # ou
-yarn add @asaas/api-sdk-typescript
+yarn add @luquinhasbrito/asaas-api-sdk-typescript
 ```
 
 ## 🚀 Início Rápido
 
 ```typescript
-import { AsaasSdk, Environment } from '@asaas/api-sdk-typescript';
+import { AsaasSdk, Environment } from '@luquinhasbrito/asaas-api-sdk-typescript';
 
 // Configuração do SDK
 const sdk = new AsaasSdk({
@@ -164,7 +164,7 @@ const pix = await sdk.pix.createPixQrCode({
 ### Configuração com Retry Personalizado
 
 ```typescript
-import { HttpMethod } from '@asaas/api-sdk-typescript';
+import { HttpMethod } from '@luquinhasbrito/asaas-api-sdk-typescript';
 
 const sdk = new AsaasSdk({
   apiKeyAuthConfig: {
@@ -197,7 +197,7 @@ sdk.setApiKeyHeader('Authorization');
 ## 🚨 Tratamento de Erros
 
 ```typescript
-import { ApiError, ErrorResponseDtoException } from '@asaas/api-sdk-typescript';
+import { ApiError, ErrorResponseDtoException } from '@luquinhasbrito/asaas-api-sdk-typescript';
 
 try {
   const pagamento = await sdk.payment.createPayment({...});

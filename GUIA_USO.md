@@ -7,11 +7,11 @@ Este guia apresenta exemplos práticos de como usar todos os serviços do SDK As
 ## 📦 Instalação
 
 ```bash
-npm install @asaas/api-sdk-typescript
+npm install @luquinhasbrito/asaas-api-sdk-typescript
 # ou
-pnpm add @asaas/api-sdk-typescript
+pnpm add @luquinhasbrito/asaas-api-sdk-typescript
 # ou
-yarn add @asaas/api-sdk-typescript
+yarn add @luquinhasbrito/asaas-api-sdk-typescript
 ```
 
 ---
@@ -21,7 +21,7 @@ yarn add @asaas/api-sdk-typescript
 ### Configuração Básica
 
 ```typescript
-import { AsaasSdk, AsaasSdkConfig, Environment } from '@asaas/api-sdk-typescript';
+import { AsaasSdk, AsaasSdkConfig, Environment } from '@luquinhasbrito/asaas-api-sdk-typescript';
 
 // Configuração do SDK
 const config: AsaasSdkConfig = {
@@ -40,8 +40,8 @@ const sdk = new AsaasSdk(config);
 ### Configuração com Retry Personalizado
 
 ```typescript
-import { AsaasSdk, AsaasSdkConfig, Environment } from '@asaas/api-sdk-typescript';
-import { HttpMethod } from '@asaas/api-sdk-typescript';
+import { AsaasSdk, AsaasSdkConfig, Environment } from '@luquinhasbrito/asaas-api-sdk-typescript';
+import { HttpMethod } from '@luquinhasbrito/asaas-api-sdk-typescript';
 
 const config: AsaasSdkConfig = {
   apiKeyAuthConfig: {
@@ -1549,7 +1549,7 @@ const pagamentoVencido = await sdk.sandboxActions.forceExpire('pay_123456789', {
 ### Exemplo Completo com Try/Catch
 
 ```typescript
-import { AsaasSdk, ApiError, ErrorResponseDtoException } from '@asaas/api-sdk-typescript';
+import { AsaasSdk, ApiError, ErrorResponseDtoException } from '@luquinhasbrito/asaas-api-sdk-typescript';
 
 try {
   const pagamento = await sdk.payment.createPayment({
@@ -1621,7 +1621,7 @@ pagamentoPromise.then((pagamento) => {
 ### Exemplo 1: Fluxo Completo de Venda
 
 ```typescript
-import { AsaasSdk, Environment } from '@asaas/api-sdk-typescript';
+import { AsaasSdk, Environment } from '@luquinhasbrito/asaas-api-sdk-typescript';
 
 const sdk = new AsaasSdk({
   apiKeyAuthConfig: {

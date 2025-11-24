@@ -1,5 +1,5 @@
 {
-  "name": "@lucasbrito-wdt/asaas-api-sdk-typescript",
+  "name": "@luquinhasbrito/asaas-api-sdk-typescript",
   "version": "1.0.0",
   "description": "SDK TypeScript oficial para API Asaas",
   "main": "dist/index.js",
@@ -10,7 +10,8 @@
     "test": "jest",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "publish:public": "npm publish --access public"
   },
   "keywords": [
     "asaas",
