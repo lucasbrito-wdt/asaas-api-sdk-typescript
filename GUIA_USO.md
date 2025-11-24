@@ -877,6 +877,8 @@ const configuracaoAtualizada = await sdk.anticipation.updateAnticipationConfigur
 
 ## 🔔 17. Webhooks (WebhookService)
 
+> 💡 **Para um guia completo de webhooks incluindo integração com NestJS, consulte:** [Guia de Webhooks](./docs/WEBHOOKS.md)
+
 ### Criar Configuração de Webhook
 
 ```typescript

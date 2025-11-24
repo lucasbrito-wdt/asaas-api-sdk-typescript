@@ -223,6 +223,8 @@ try {
 ## 🔗 Links Úteis
 
 - [Guia Completo de Uso](./GUIA_USO.md) - Exemplos detalhados de todos os serviços
+- [Integração com NestJS](./docs/NESTJS_INTEGRATION.md) - Guia completo de integração com NestJS
+- [Guia de Webhooks](./docs/WEBHOOKS.md) - Configuração e integração de webhooks
 - [Documentação da API Asaas](https://docs.asaas.com/)
 - [SDK Java Original](https://github.com/asaasdev/asaas-api-sdk-java)
 
