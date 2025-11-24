@@ -1,6 +1,6 @@
 {
   "name": "@luquinhasbrito/asaas-api-sdk-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK TypeScript oficial para API Asaas",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
